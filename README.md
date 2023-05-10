@@ -1,11 +1,11 @@
-About dbt-redshift
-==================
+About dbt-redshift-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dbt-redshift-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dbt-labs/dbt-redshift
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dbt-redshift-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Redshift adapter plugin for dbt
 
