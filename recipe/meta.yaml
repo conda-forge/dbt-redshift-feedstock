@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.7
   run:
     # via Grayskull
-    - python >=3.8
+    - python >=3.7
     - dbt-core >=1.5.0,<1.6.dev0
     - dbt-postgres >=1.5.0,<1.6.dev0
     - boto3 >=1.26.26,<1.27.dev0
