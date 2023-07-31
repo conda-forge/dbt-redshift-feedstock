@@ -1,5 +1,5 @@
 {% set name = "dbt-redshift" %}
-{% set version = "1.5.8" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dbt-redshift-{{ version }}.tar.gz
-  sha256: 0233cd942f716a5c55b39094c1927f0fdc0f0954e4594b80935cc1c10cc64157
+  sha256: 0e3ecc32fe47b6cbec785b81f87f6b780c63e0c94a7f6bb8293b962a9276c46f
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
     # via Grayskull
     - agate
     - python >=3.8
-    - dbt-core >=1.5.0,<1.6.dev0
-    - dbt-postgres >=1.5.0,<1.6.dev0
+    - dbt-core >=1.6.0,<1.7.dev0
+    - dbt-postgres >=1.6.0,<1.7.dev0
     - boto3 >=1.26.157,<1.27.dev0
     - redshift_connector ==2.0.913
 
