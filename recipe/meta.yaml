@@ -20,12 +20,12 @@ requirements:
     - python >=3.8
   run:
     # via Grayskull
-    - agate
     - python >=3.8
     - dbt-core >=1.6.0,<1.7.dev0
     - dbt-postgres >=1.6.0,<1.7.dev0
     - boto3 >=1.26.157,<1.27.dev0
     - redshift_connector ==2.0.913
+    - agate
 
 test:
   imports:
