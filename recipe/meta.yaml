@@ -1,5 +1,5 @@
 {% set name = "dbt-redshift" %}
-{% set version = "1.9.3" %}
+{% set version = "1.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b0534d49924f446bdb6b5ebca5db1cd3f37b955697dc40b61ca4be426d1d6217
+  sha256: e75efff64dc8a79e3a2be665bbf8a1272d03cd0c9c1542f3d46bae7e53e2b363
 
 build:
   noarch: python
