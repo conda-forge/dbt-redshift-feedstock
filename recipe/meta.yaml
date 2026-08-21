@@ -1,13 +1,13 @@
 {% set name = "dbt-redshift" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 95366ac6bdfca931ff0b4943637b7515dd7421018ec7fbb508ddd7271163c9fc
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9921457b139efa694e74c6c6c316daa56bb2034e65c1699faada8ae8297ab800
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - dbt-postgres >=1.10.0rc1,<2.0
     - redshift_connector >=2.1.8,<2.2
     - dbt-core >=1.8.0b3,<2.0
-    - sqlparse >=0.5.0,<0.6.0
+    - sqlparse >=0.5.0,<0.7.0
     - agate
 
 test:
